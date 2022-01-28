@@ -6,3 +6,6 @@ El uso primordial de promtheus es obtener todos los datos que son necesarios par
 
 Hay varias maneras de instalar tanto grafana como prometheus, pero la forma más sencilla es haciendo uso de Helm y su chart kube-prometheus-stack, el cual ya crea una base con todas herramientas conectadas en el cluster. Se recomienda crear un namespace de forma separada para tener un mejor manejo de los servicios que se crearan.
 
+```console
+  helm install [RELEASE_NAME] prometheus-community/kube-prometheus-stack -n [NAMESPACE]
+```
