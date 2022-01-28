@@ -50,7 +50,7 @@ Aca se puede ver de manera mas filtrada las alertas que seran transmitidas a tra
 Para hacer uso de Slack se debe obtener un web-hook de algun espacio de trabajo en Slack, sera algo asi:
 
 ```
-https://hooks.slack.com/services/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
+https://hooks.slack.com/services/T02SX6Q/B030A4KM1/M9THhMSrESzgmPHSCW'
 ```
 Con este link ya tenemos permisos para publicar en un espacio de trabajo y en un canal.
 
@@ -60,7 +60,7 @@ Ademas de esto debemos realizar y poner la siguiente configuracion en el secret:
 global:
  resolve_timeout: 1m
  #Webhook de nuestro espacio de trabajo
- slack_api_url: 'https://hooks.slack.com/services/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'
+ slack_api_url: 'https://hooks.slack.com/services/T02SX6Q/B030A4KM1/M9THhMSrESzgmPHSCW'
 route:
   receiver: 'slack-notifications'  
   routes:
