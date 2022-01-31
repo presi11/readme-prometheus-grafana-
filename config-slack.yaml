@@ -1,0 +1,14 @@
+global:
+  resolve_timeout: 1m
+  slack_api_url: 'https://hooks.slack.com/services/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'
+route:
+  receiver: 'slack-notifications'  
+  routes:
+  - match:
+      severity: warning
+receivers:
+- name: 'slack-notifications'
+  slack_configs:
+  - channel: '#alert-prometheus'
+    text: "Pruebas de repetición 1"
+    send_resolved: true
